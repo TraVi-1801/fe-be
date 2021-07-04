@@ -1,0 +1,52 @@
+POST  http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "hongvi",
+    "password": "vi"
+}
+
+###
+POST  http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "hongvi",
+    "password": "vi"
+}
+
+###
+POST  http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGRlZDMyYzI5NjRlMDUzNzQ4ZjA1YTQiLCJpYXQiOjE2MjUyMTU3ODl9.3HCpMN8k8NQ0ozSePRx8By4YsbNFoKV4jraKNJ3065o
+
+
+{
+    "title": "hongvivv11",
+    "description": "abc",
+    "url": "shoppe.com",
+    "status": "LEARNING"
+}
+
+
+### 
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGRlZDMyYzI5NjRlMDUzNzQ4ZjA1YTQiLCJpYXQiOjE2MjUyMTU3ODl9.3HCpMN8k8NQ0ozSePRx8By4YsbNFoKV4jraKNJ3065o
+
+
+
+####
+PUT  http://localhost:5000/api/posts/60e03ba25154f53a30cdda63
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGRlZDMyYzI5NjRlMDUzNzQ4ZjA1YTQiLCJpYXQiOjE2MjUyMTU3ODl9.3HCpMN8k8NQ0ozSePRx8By4YsbNFoKV4jraKNJ3065o
+
+{
+    "title": "yeu hong",
+    "description": "hihi",
+    "url": "youtobe.com",
+    "status": "LEARNING"
+}
+
+####
+DELETE http://localhost:5000/api/posts/60e03ba25154f53a30cdda63
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGRlZDMyYzI5NjRlMDUzNzQ4ZjA1YTQiLCJpYXQiOjE2MjUyMTU3ODl9.3HCpMN8k8NQ0ozSePRx8By4YsbNFoKV4jraKNJ3065o
